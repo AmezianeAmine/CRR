@@ -24,7 +24,7 @@ class CRR():
         valeur2 = self.a*self.S0*self.d
         valeurEcheance=[valeur1,valeur2]
         valeurP=self.S0*self.u - self.K
-        return (&quot;on trouve a = &quot;,self.a ,&quot;, b = &quot;, self.b , &quot; et donc la valeur C0= sigma sera&quot; , self.sigma , &quot; donc le prix d&#39;achat propose sera&quot;, prixAchat ,&quot;et la valeur d&#39;echance est soit&quot;,valeurEcheance,&quot;donc dans le 1er cas il paeira &quot;,valeurP,&quot;et il rembourse &quot;,-self.b, &quot;avec des interets r=0,  et dans le 2eme cas il remboursera donc les &quot;,- self.b,)
+        return ("on trouve a = ",self.a ,", b = ", self.b , " et donc la valeur C0= sigma sera" , self.sigma , " donc le prix d'achat propose sera", prixAchat ,"et la valeur d echance est soit",valeurEcheance,"donc dans le 1er cas il paeira ",valeurP,"et il rembourse ",-self.b,"avec des interets r=0,  et dans le 2eme cas il remboursera donc les ",- self.b)
 z =CRR(120,1.5,0.5,80,0,1) 
 z.uneEtape()
 print(z.sigma)
